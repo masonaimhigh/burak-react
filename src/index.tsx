@@ -10,6 +10,8 @@ import theme from './app/MaterialTheme';
 import {BrowserRouter as Router} from "react-router-dom";
 import './css/index.css';
 
+
+// Global integration: Router, Mui, Redux, GraphQL
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
