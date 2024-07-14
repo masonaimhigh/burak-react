@@ -12,7 +12,7 @@ import Divider from "../../components/divider";
 
 const newDishes = [
     { productName: "Cutlet", imagePath: "/img/cutlet.webp" },
-    { productName: "Kebab", imagePath: "/img/kebab-fresh" },
+    { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
     { productName: "Kebab", imagePath: "/img/kebab.webp" },
     { productName: "Lavash", imagePath: "/img/lavash.webp" },
   ];
@@ -25,7 +25,8 @@ export default function NewDishes() {
             <Box className={"category-title"}>Fresh Menu</Box>
               <Stack className={"cards-frame"}>
                 <CssVarsProvider>
-                  {newDishes.map((ele, index) => {
+                 {newDishes.length !== 0 ? (
+                  newDishes.map((ele, index) => {
                     return (
                      <Card key={index} variant="outlined" className={"card"}>
                        <CardOverflow>
@@ -56,7 +57,10 @@ export default function NewDishes() {
                      </CardOverflow>
                    </Card>
                     );
-                  })}
+                  })
+                 ) : (
+                    <Box className="no-data">New Products are not available!</Box>
+                 )}
                   </CssVarsProvider>
               </Stack>      
             </Stack>
