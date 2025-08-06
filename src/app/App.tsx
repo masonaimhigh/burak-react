@@ -14,7 +14,12 @@ import "../css/navbar.css"
 import "../css/footer.css"
 
 
- 
+// Routing system 
+// React - library - component based, declarative spa 
+// screen header -HomePage footer oraligida not header and footer,
+//  sectional - statistics, ads ...
+// common - header, footer, divider components
+// Conatainer  - min standandard 1300px, 1 ta -> stack flex -> box =  kichik logo, name
 function App() {
   const location = useLocation();
   return ( 
