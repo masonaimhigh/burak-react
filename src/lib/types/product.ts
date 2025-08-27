@@ -21,7 +21,7 @@ import {
     updatedAt: Date;
   }
   
-  export interface ProductInquery {
+  export interface ProductInquiry {
     order: string;
     page: number;
     limit: number;
